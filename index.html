@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- ! CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+		/>
+		<title>Frontend Bootcamp</title>
+	</head>
+	<body>
+		<!-- ! Navbar -->
+		<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+			<div class="container">
+				<a href="#" class="navbar-brand">Frontend Bootcamp</a>
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navmenu"
+				>
+					<span
+						class="menu"
+						onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+						aria-label="Main Menu"
+					>
+						<svg
+							width="100"
+							height="100"
+							viewBox="0 0 100 100"
+							style="height: auto"
+						>
+							<path
+								class="line line1"
+								d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+							/>
+							<path class="line line2" d="M 20,50 H 80" />
+							<path
+								class="line line3"
+								d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+							/>
+						</svg>
+					</span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navmenu">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a href="#learn" class="nav-link">What You'll Learn</a>
+						</li>
+						<li class="nav-item">
+							<a href="#questions" class="nav-link">Questions</a>
+						</li>
+						<li class="nav-item">
+							<a href="#instructors" class="nav-link">Instructors</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<!-- ! Showcase -->
+			<section
+				class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+			>
+				<div class="container">
+					<div class="d-md-flex align-items-center justify-content-between">
+						<div class="mb-lg-5">
+							<h1>Become a <span class="text-primary">Web Devloper</span></h1>
+							<p class="lead my-4">
+								We focus on teaching our students the fundamentals of the latest
+								and greatest technologies to prepare them for their first dev
+								role
+							</p>
+							<button class="btn btn-primary btn-lg">Enroll Now</button>
+						</div>
+						<img
+							src="./img/showcase.svg"
+							alt="Showcase"
+							class="img-fluid w-50 d-none d-md-block"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- ! Newsletter -->
+			<section class="bg-primary text-light p-0 py-5 py-md-5">
+				<div class="container">
+					<div
+						class="
+							d-flex
+							justify-content-center
+							align-items-center
+							flex-lg-row flex-column
+						"
+					>
+						<h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+
+						<div class="input-group w-50 w-lg-100 ms-lg-3 mt-3 mt-lg-0">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Enter Your Email Here"
+							/>
+							<button class="btn btn-dark btn-lg" type="button">Button</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ! Boxes -->
+			<section class="p-5">
+				<div class="container">
+					<div class="row text-center">
+						<div class="col-md">
+							<div class="card bg-dark text-light">
+								<div class="card-body text-center">
+									<div class="h1 mb-3">
+										<i class="bi bi-laptop"></i>
+									</div>
+									<h3 class="card-title mb-3">Virtual</h3>
+									<p class="card-text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Doloremque omnis tenetur dolorem voluptatum quo distinctio?
+									</p>
+									<a href="#" class="btn btn-primary">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="card bg-secondary text-light">
+								<div class="card-body text-center">
+									<div class="h1 mb-3">
+										<i class="bi bi-person-square"></i>
+									</div>
+									<h3 class="card-title mb-3">Hybrid</h3>
+									<p class="card-text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Doloremque omnis tenetur dolorem voluptatum quo distinctio?
+									</p>
+									<a href="#" class="btn btn-dark">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="card bg-dark text-light">
+								<div class="card-body text-center">
+									<div class="h1 mb-3">
+										<i class="bi bi-people"></i>
+									</div>
+									<h3 class="card-title mb-3">In Person</h3>
+									<p class="card-text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Doloremque omnis tenetur dolorem voluptatum quo distinctio?
+									</p>
+									<a href="#" class="btn btn-primary">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+	<!-- ! JavaScript -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"
+	></script>
+</html>
